@@ -4,9 +4,9 @@
     --cor-de-fundo: #353233;
     --azul: #06f8d0;
     --branco: #FFFFFF;
-    --botao-ativo: #04eaf191;
+    --botao-ativo: #02e3eb91;
     --botao-inativo: rgba(141, 141, 141, 0.774);
-    --texto-fundo: rgba(77, 70, 71, 0.58989);
+    --texto-fundo: rgba(93, 112, 111, 0.59);
 }
 
     body {
@@ -55,11 +55,6 @@
         display: block;
     }
     
-    @media screen and (min-width: 768px) {
-        .botoes {
-            display: flex;
-        }
-    }
 
     @media screen and (min-width: 768px) {
         .botoes {
@@ -90,8 +85,8 @@
     display:block;
 }
 
-.aba.conteudo{
-    display: none;
+.aba-conteudo{
+    display:none;
 }
 
 .aba-conteudo-titulo-principal{
