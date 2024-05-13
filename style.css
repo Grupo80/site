@@ -1,12 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 :root {
-    --cor-de-fundo: #d183a1;
-    --rosa: #ff34bb;
+    --cor-de-fundo: #353233;
+    --azul: #06f8d0;
     --branco: #FFFFFF;
-    --botao-ativo: #6d0530;
-    --botao-inativo: rgba(173, 10, 73, 0.774);
-    --texto-fundo: rgba(156, 3, 42, 0.589);
+    --botao-ativo: #04eaf191;
+    --botao-inativo: rgba(141, 141, 141, 0.774);
+    --texto-fundo: rgba(77, 70, 71, 0.58989);
 }
 
     body {
@@ -51,4 +51,55 @@
         border-top: none;
     }
     
+    .botoes {
+        display: block;
+    }
     
+    @media screen and (min-width: 768px) {
+        .botoes {
+            display: flex;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .botoes {
+            display: flex;
+        }
+    
+        .botao:first-child {
+            border-radius: 40px 0 0 0;
+        }
+    
+        .botao:last-child {
+            border-radius: 0 40px 0 0;
+        }
+    }
+    
+.botao.ativo{
+     background-color: var(--botao-ativo);
+     border-bottom: 4px solid var(--branco)
+}
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo{
+    display:block;
+}
+
+.aba.conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--azul)
+}
